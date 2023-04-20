@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/preguntaEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:height="150dp"
+        android:text="¿Dónde quieres viajar? "
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="345dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/universe" />
+
+
+
+
+    <Button
+        android:id="@+id/botonViajes"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_width="281dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/color_principal_app"
+        android:text="Viajes" />
+
+    <Button
+        android:id="@+id/bontonNavegar"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_width="281dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/color_principal_app"
+        android:text="Agregar viajes" />
+
+    <Button
+        android:id="@+id/botonListado"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_width="281dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/color_principal_app"
+        android:onClick="abrirListaAnimales"
+        android:text="Ver Nuevos viajes" />
+
+
+
+</LinearLayout>
